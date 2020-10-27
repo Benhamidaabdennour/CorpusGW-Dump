@@ -22,7 +22,7 @@ from time import sleep
 from langdetect import detect
 
 
-Corpora = {}#variable returned as context in django
+Corpora = {}
 
 def BuildCorp(Domaine, Name):
     Lang = detect(Domaine)
