@@ -43,7 +43,7 @@ def BuildCorp(Domaine, Name):
                 print(Lang)
                 Articles[wikipedia.page(Article).title] = sub(r'[^\u0600-\u06ff\u0750-\u077f\ufb50-\ufbc1\ufbd3-\ufd3f\ufd50-\ufd8f\ufd50-\ufd8f\ufe70-\ufefc\uFDF0-\uFDFD]+',' ',wikipedia.page(Article).content)
             else:
-                Articles[wikipedia.page(Article).title] = sub(r'[^A-Za-z0-9]+', ' ',wikipedia.page(Article).content)
+                Articles[wikipedia.page(Article).title] = sub(r'[^A-Za-z]+', ' ',wikipedia.page(Article).content)
 
             Count = Count + len(word_tokenize(Articles[wikipedia.page(Article).title]))
             GroupedText = GroupedText + " " + Articles[wikipedia.page(Article).title]
