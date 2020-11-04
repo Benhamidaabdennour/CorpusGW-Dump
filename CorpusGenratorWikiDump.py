@@ -15,6 +15,8 @@ written in the language we want
 '''
 
 import wikipedia #https://wikipedia.readthedocs.io/en/latest/code.html#api
+import os
+import json
 from re import sub #https://docs.python.org/3/library/re.html
 from nltk.tokenize import word_tokenize 
 from requests import exceptions as RExceptions
